@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0;
+}
+
+.nav-bar {
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-bar button {
+    outline: none;
+    border:none;
+    border-radius:  8px;
+    background-color: #F0F0F0;
+    height: 47px;
+    width: 82px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size:19px;
+    cursor: pointer;
+
+}
+.nav-bar button:hover {
+    background-color: #e3e3e3;
+}
+
+.main-content {
+    padding: 2rem;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.add-book button {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    /* Step 2: Add base styling */
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-book button:hover{
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.add-book {
+    position: relative;
+    /* display: flex; */
+    /* display: none; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-family: 'Lato', sans-serif;
+    /* color: chocolate; */
+}
+
+.all-inputs
+{
+    margin: 0px;
+    position: fixed;
+    border:2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato', sans-serif;
+    padding:30px;
+    border-radius: 5px;
+    max-width: 280px;
+    background-color: #f0eef1;
+}
+
+.blur {
+    filter: blur(2px);
+    user-select: none;
+}
+
+.inputs {
+    margin-bottom: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    /* outline: none; */
+    /* width :260px; */
+    height: 40px;
+    border:none;
+    outline: none;
+    border-radius: 7px;
+    background-color: white;
+    /* margin-left: 10px; */
+    padding-left: 7px;
+}
+
+    dialog[open].closing {
+        animation: zoom-out 0.3s ease-in forwards !important;
+    }
+
+    @keyframes zoom-out {
+        from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        to   { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+    }
+
+dialog[open] {
+    animation: zoom-int 0.4s  ease-out  forwards;
+  }
+  
+  @keyframes zoom-int {
+    from {
+      opacity: 0;
+      transform: translate(-50% ,-50%) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50% ,-50%) scale(1);
+    }
+  }
+  
+.submit-infos 
+{
+    font-family: 'Lato', sans-serif;
+}
+.submit-infos button {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    width :200px;
+    height: 40px;
+    border:none;
+    outline: none;
+    border-radius: 7px;
+    background-color: rgb(139, 240, 173);
+    /* margin-bottom: 5px; */
+}
+
+.submit-infos button:hover{
+    background-color:rgb(112, 219, 112) ;
+    cursor: pointer;
+}
+
+.check-box
+{
+    width: 18px;
+    outline: none;
+}
+
+.read-it 
+{
+    display: flex;
+    justify-content:space-evenly;
+    font-family: 'Lato', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: bold;
+    margin-bottom: -8px;
+    margin-top: -16px;
+}
+
+
+
+/* book list and cards section */
+
+
+#cardscontainer {
+    margin-top : 15px;
+    display: flex;
+    flex-wrap: wrap; /* So cards go to the next line if space runs out */
+    gap: 20px; /* Space between cards */
+    justify-content: flex-start; /* Or center, if you want centered layout */
+}
+
+
+.book-cards{
+    margin-top:15px;
+    font-size: large;
+    font-weight: bold;
+    font-size: 29px;
+}
+
+
+.book {
+    /* margin: 15px; */
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    /* height: 300px; */
+    width: 350px;
+    border-radius: 8px;
+}
+
+.remove button {
+    margin-bottom: 20px;
+    width: 250px;
+    height: 50px;
+    font-size: 29px;
+    border: none;
+    background-color: #E38471;
+    border-radius: 7px;
+}
+.remove button:hover {
+    background-color: #E64627;
+    cursor: pointer;
+}
+
+.ft {
+    margin-top: 50%;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./front-end/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--  nav bar for LIB-->
+    <div id="all">
+        <nav class="nav-bar">
+            <a> library </a>
+            <button onclick="window.open('https://github.com/astro-47', '_blank')"> Github </button>
+        </nav>
+        <main id="button-div" class="main-content">
+            <div class="add-book">
+                <button id="add-book"> + Add book </button>
+            </div>
+            <dialog id="inputs" class="all-inputs">
+                <form>
+                    <div>
+                        <h1> Add new book </h1>
+                        <input id="title" name="title" class="inputs" placeholder="Title" required />
+                        <input id="author" name="author" class="inputs" placeholder="Author" required />
+                        <input id="pages" name="pages" class="inputs" placeholder="Pages" type="number" required />
+                    </div>
+                    <div class="read-it">
+                        <p> Have you read it? </p>
+                        <input id="check-box" class="check-box" type="checkbox">
+                    </div>
+                    <div class="submit-infos">
+                        <button id="submit" type="submit"> Submit </button>
+                    </div>
+                </form>
+            </dialog>
+            <div id="cardscontainer">
+                <template id="books-cards" class="book-cards">
+                    <div id="book" class="book">
+                        <div id="infos" class="infos">
+                            <p id="_title"></p>
+                            <p id="_author"></p>
+                            <p id="_pages"></p>
+                            <div>
+                                <p id="read"></p>
+                            </div>
+                            <div class="remove">
+                                <button> remove </button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </main>
+</body>
+
+<!-- <footer>
+    <p class="ft"> all rights reserved for ASTRO </p>
+    </footer> -->
+<script src="index.js"> </script>
+
+</html>
